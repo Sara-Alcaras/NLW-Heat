@@ -27,17 +27,17 @@
             <img src="images/build.svg" alt="Selo Rocketseat">
 
           </span>
-          <img src="https://lorempixel.com/185/185/people/" alt="Foto Pessoal">
+          <img id="userImage" src="https://lorempixel.com/185/185/people/" alt="Foto Pessoal">
         </div>
       
 
         <h1 id="userName">Sara Alcaras</h1>
-        <a href="https://github.com/Sara-Alcaras " 
+        <a id="userLink" href="https://github.com/Sara-Alcaras " 
         target="_blank" style="text-decoration:none">
           <img src="images/github.svg" alt="ícone github">
-          Sara-Alcaras</a>
+          <span id="userLogin">Sara-Alcaras</span> </a>
 
-          <p>
+          <p id="userBio">
             
             Software Development Internship
           </p>
@@ -62,36 +62,7 @@
 
     </main>
 
-    <script>
-      const LinksSocialMedia = {
-        github: "Sara-Alcaras",
-        linkedin: "saraalcaras",
-        instagram: "s4mus"
-      }
-
-      function changeSocialMediaLinks() {
-        for(let li of socialLinks.children){
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}` /* pega a variavel e troca pelo valor que está guardando*/
-
-          //alert(li.children[0].href)
-        }
-          
-      }
-
-      changeSocialMediaLinks()
-    
-    /* camelCase 
-       PascalCase 
-       snake_case 
-       
-      document.getElementById('userName').userName.
-      textContent = 'Samuel' pega o id do nome github e troca o nome 
-
-    */
-
-    </script>
+    <script src="main.js"></script>
 
   </body>
 </html>
